@@ -1,7 +1,7 @@
 package com.edgesdk.models;
 
 import com.edgesdk.EdgeSdk;
-import com.edgevideo.sdk.Utils;
+import com.edgesdk.Utils.Utils;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
