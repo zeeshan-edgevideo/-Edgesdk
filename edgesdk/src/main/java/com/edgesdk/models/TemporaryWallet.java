@@ -1,6 +1,6 @@
 package com.edgesdk.models;
 
-import com.edgevideo.sdk.TempWalletDataHolder;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class TemporaryWallet {
@@ -21,7 +21,7 @@ public class TemporaryWallet {
     public String toJson() {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            TempWalletDataHolder tempWalletDataHolder = new TempWalletDataHolder(this.privateKey,this.toAddress);
+            TemporaryWallet tempWalletDataHolder = new TemporaryWallet(this.privateKey,this.toAddress);
             return mapper.writeValueAsString(tempWalletDataHolder);
         } catch (Exception e) {
             System.out.println(e);
